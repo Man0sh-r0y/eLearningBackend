@@ -46,6 +46,7 @@ app.use('/api/v1/', contactUsRoutes);
 
 // define the routes
 app.get('/', (req, res) => { // define the home route
+    response.send(`<h1> Backend is Running. It's is the Backend Route </h1>`);
     res.json({
         success: true,
         message: 'This is the home route for the server'
